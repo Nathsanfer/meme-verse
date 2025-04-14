@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Header from "../components/header";
 import HeroSection from "../components/heroSection";
 import CategoriesSection from "../components/categoriesSection";
+import InteractionBar from "../components/interactionBar";
 
 export default function Home() {
   // Array de dados dos memes para serem passados como props
@@ -219,24 +220,7 @@ export default function Home() {
                     <p className={styles.memeDescription}>{meme.description}</p>
 
                     {/* COMPONENTE: InteractionBar */}
-                    <div className={styles.interactionBar}>
-                      <div className={styles.interactionButton}>
-                        <span>👍</span>
-                        <span>{meme.likes}</span>
-                      </div>
-                      <div className={styles.interactionButton}>
-                        <span>💬</span>
-                        <span>{meme.comments}</span>
-                      </div>
-                      <div className={styles.interactionButton}>
-                        <span>🔄</span>
-                        <span>Share</span>
-                      </div>
-                      <div className={styles.interactionButton}>
-                        <span>🔖</span>
-                        <span>Save</span>
-                      </div>
-                    </div>
+                    <InteractionBar meme={meme} />
                     {/* FIM COMPONENTE: InteractionBar */}
                   </div>
                 </div>
