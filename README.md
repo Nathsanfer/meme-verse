@@ -1,4 +1,4 @@
-# Desafio: Pegar um projeto 
+# 🎭 Desafio: "MemeVerse" Componentização e Props
 
 ## Contexto
 
